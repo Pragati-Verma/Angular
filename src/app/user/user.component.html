@@ -1,0 +1,9 @@
+<div>
+    <button [class.active]="selected" (click)="onSelectUser()">
+        <!-- <img src="{{'assets/users/' + selectedUser.avatar}}" /> -->
+        <!-- above line can also be used but mostly STRING INTERPOLATION is used between 2 tags (opening and closing tags) -->
+        <!-- PROPERTY BINDING is preferrable for attributes -->
+        <img [src]="imagePath" [alt]="user.name"/>
+        <span>{{ user.name }}</span>
+    </button>
+</div>
